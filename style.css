@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(247, 241, 224);
+    color: black;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    color: black;
+}
+
+ul li {
+    display: inline-block;
+    padding: 10px;
+
+}
+
+.menu {
+    margin-right: 20px;
+    color: black;
+  
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+    margin-left: 190px;
+}
+
+.main {
+    margin-left: 50px;
+    margin-top: 60px;
+}
+
+.main h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+
+}
+
+
+.mini1 {
+    background-color: rgb(8, 8, 82);
+    width: 350px;
+    height: 230px;
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+
+.mini1:hover{
+    background-color: rgb(209, 44, 209);
+}
+
+
+.mini2 {
+    background-color: rgb(21, 71, 48);
+    width: 350px;
+    height: 230px;
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+
+.mini3 {
+    background-color: rgb(209, 162, 7);
+    width: 350px;
+    height: 230px;
+    color: aliceblue;
+    margin-bottom: 20px;
+   
+}
+
+
+
+
+.mini1 h1 {
+    padding: 50px;
+   
+}
+
+.mini2 h1 {
+    padding: 50px;
+}
+
+.mini3 h1 {
+    padding: 50px;
+}
+
+
+.middle {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 300px 300px  300px ;
+    gap: 140px;
+    margin-left: 200px;
+
+
+}
+
+
+.mid {
+    text-align: justify;
+   
+}
+
+.baa {
+    display: flex;
+    margin-top: 100px;
+    /* margin-left: 150px; */
+}
+
+.buu button {
+    background-color: black;
+    color: white;
+    margin-right: 10px;
+    border-radius: 40px;
+    width: 50px;
+    height: 30px;
+}
+
+.bii button {
+  border: 1px solid;
+  background-color: transparent;
+    width: 120px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+
+@media screen and  (max-width: 600px) {
+    .middle {
+        display: grid;
+        grid-template-columns: 300px;
+        width: 100%;
+    
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .nav {
+        margin-left: 0;
+
+    }
+
+    .middle {
+        margin-left: 50px;
+
+    }
+
+    .body {
+        background-color: rgb(182, 182, 192);
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+     
+    }
+
+    .header h1 {
+        margin-left: 70px;
+    }
+
+}
+
+.girl {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    margin-bottom: 30px;
+
+}
+
+@keyframes example {
+    0%   {background-image: url("./images/Flowers\ in\ Transit.jpg"); left:0px; top:0px;}
+    25%  {background-image: url("./images/Moon_H_M🌙.jpg"); left:200px; top:0px;}
+    50%  {background-image:url("./images/This\ Is\ Why\ You\ Should\ Go\ Device-Free\ One\ Day\ a\ Week.jpg"); top:200px;}
+    75%  {background-image: url(./images/Mark\ &\ Erica’s\ Mountain\ Bike\ Elopement\ in\ Lake\ Tahoe.jpg); left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
